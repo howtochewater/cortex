@@ -1,0 +1,126 @@
+body{
+  display: flexbox;
+  font-family: "Tahoma", fantasy;
+  background: linear-gradient(-45deg, rgb(245, 76, 146),rgb(179, 93, 250),rgb(78, 220, 255),rgb(56, 255, 156));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+	height: 100vh;
+  scroll-behavior: smooth;
+  color: rgb(75, 73, 73);
+}
+#section1 {
+  background-color: transparent;
+  }
+  
+#section2 {
+  background-color: transparent;
+  }
+
+.auto-scroll{
+  float: right;
+  margin-left: 90%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.top-text{
+  display: grid;
+  grid-template-columns: 1fr 1fr 0fr;
+  grid-gap: 10px;
+  border-bottom: 1.5px solid black;
+  padding-bottom: 5px;
+  color: rgb(48, 46, 46);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.p1-text{
+  text-align: center;
+}
+
+.animated-button {
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: rgb(48, 46, 46);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 7%;
+  min-width: 0;
+  padding: 16px 24px;
+  text-align: center;
+  transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  width: 10%;
+  will-change: transform;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.animated-button:disabled {
+  pointer-events: none;
+}
+
+.animated-button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.people-content {
+  float: left;
+  width: 20%;
+  margin-left: 2rem;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.content-item {
+  content: "";
+  clear: both;
+  display: table;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.content-item img {
+  height: auto;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.p6{
+  border-bottom: 3px solid rgb(200, 44, 231);
+  padding-bottom: 2px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
